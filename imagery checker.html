@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image OCR Checker</title>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    img { max-width: 256px; margin: 10px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h2>Mapillary OCR Text Checker</h2>
+  <form id="ocrForm">
+    <label>Location: <input type="text" id="location" required></label><br><br>
+    <label>Text to Find: <input type="text" id="text" required></label><br><br>
+    <button type="submit">Search</button>
+  </form>
+  <div id="results"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
